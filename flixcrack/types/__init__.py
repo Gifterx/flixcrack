@@ -5,7 +5,7 @@ class Device:
     def __init__(self, name):
         path = f"devices/{name}"
         if not os.path.exists(path):
-            raise Exception("Device not found")
+            raise print("Device not found")
         self.name = name
         self.blob = f"{path}/device_client_id_blob"
         self.private_key = f"{path}/device_private_key"
